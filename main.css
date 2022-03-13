@@ -1,0 +1,75 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #213053;
+    margin: 0;
+  }
+header {
+    display: flex; /*создаем контейнер, чтобы выровнять кнопки в одну строчку*/
+    justify-content: space-between; /* Распределить логотип влево, а ссылку Контакты и кнопку Заказать вправо */
+    align-items: center; /* центруем по вертикали с помощью align-items: */
+    padding: 20px; /* внутренний отступ всей шапке*/
+  }
+  .header__logo {
+    height: 30px; /* Выставить высоту лого будет достаточно, ширина автоматически подстроится под высоту */
+  }
+  /* Мы написали селектор a { … }, потому что нам не нужны эти стили для всех тегов a. А вот далее, 
+  чтобы ссылка была похожа на ссылку из макета, нужно добавить стили уже для тега <a> именно из шапки. 
+  Для этого воспользуемся селектором header a: для всех тегов <a> внутри тега <header>. */
+  a {
+    text-decoration: none;
+    color: #213053;
+  }
+   
+  header a {
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 25px;
+  } 
+  button { /* стили для всех кнопок */
+    font-family: 'Raleway', sans—serif;
+    font-size: 15px;
+    color: #fff;
+    background-color: #23a030;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
+    padding: 15px;
+  }
+  .about__sun-image {
+    width: 100px;
+    height: 100px;
+  }
+  .about__image {
+    width: 500px;
+  }
+   .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 115px;
+    padding-top: 115px;
+    background: url('img/back.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+  .about h1 {
+      font-size: 70px;
+      line-height: 76px;
+  }
+  .about p {
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 0.8;
+  }
+   
+  .about button {
+    font-size: 18px;
+    padding: 20px 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  .about__info {
+    max-width: 550px;
+  }
+  
